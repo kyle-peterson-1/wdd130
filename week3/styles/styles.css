@@ -3,4 +3,16 @@
     line-height: 1.5em;}
 #active {
         background-color: white;
-        color: steelblue;}
+        color: steelblue; }
+img {
+    width: 80%; 
+    display: block;
+    margin: 0 auto;}
+main p {
+    width: 80%; 
+    margin: 50px auto;}
+a {
+    font-size: 1.5em; }
+/* * {border: 2px solid blue; }*/
+h1 {text-align: center; }
+nav, footer {text-align: center; }
