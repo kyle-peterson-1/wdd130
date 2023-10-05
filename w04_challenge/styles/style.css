@@ -1,0 +1,24 @@
+* {border: 2px solid blue; }
+html{
+    background-color: rgb(249, 178, 213); }
+body {
+    text-align: center; }
+ol {
+    padding: 0; color: black; }
+img {
+    width: 20%; 
+    display: block;
+    margin: 0 auto; }
+q {
+    color: white; }
+body h1 {
+    color: white; }
+body h1 :hover {
+    color: black; }
+body p {
+    color: white; }
+body h3 {
+    color: white; }
+footer p {
+    color: black; }
+.center-list { }
