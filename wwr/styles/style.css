@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&family=Sriracha&display=swap');
+
 #content {max-width: 1600px; margin: 0 auto;}
 
 nav a {text-align: center;}
@@ -11,7 +13,8 @@ main section {text-align: center;}
 #background {height: 725px;}
 #background{background-color:rgba(20,30,13, .7);}
 
-body{background-color: #fcfbfb; }
+body{background-color: #fcfbfb; font-family: 'PT Serif', 'Sriracha', sans-serif; 
+    font-size: 22px; margin: 0; padding: 0; }
 
 header{
     background-color:rgba(20,30,13, .7);}
@@ -20,7 +23,8 @@ nav a:hover{background-color: black; color: #d9c2a3; }
 
 .book{background-color:rgba(20,30,13, .7); text-decoration: none; }
 
-.join{background-color:rgba(20,30,13, .7); color: #d9c2a3; text-decoration: none; }
+.join{background-color:rgba(20,30,13, .7); padding: 30px; color: #d9c2a3; font-family: 'PT Serif', 'Sriracha', sans-serif; 
+    font-size: 18px; margin-top: 50px; border-radius: 5px;}
 
 .book:hover{background-color:rgba(20,30,13, .7);}
 
@@ -28,32 +32,40 @@ nav a:hover{background-color: black; color: #d9c2a3; }
 
 #background{background-color:rgba(20,30,13, .7);}
 
-.msg{background-color:rgba(20,30,13, .7); }
+.msg{background-color:rgba(20,30,13, .7); line-height: 1.5em; padding: 35px; }
 
 footer{
-    background-color:rgba(20,30,13, .7);
-    }
+    background-color:rgba(20,30,13, .7); color: #d9c2a3; font-family: 'PT Serif', 'Sriracha', sans-serif; font-size: .8em; padding: 25px 50px;
+    margin-top: 200px;}
 
-nav a{color: #d9c2a3; text-decoration: none; }
+nav a{color: #d9c2a3; text-decoration: none; padding: 35px;}
+
 nav a:hover{color: #d9c2a3; }
-.home-title{color: #d9c2a3; }
+
+.home-title{color: #d9c2a3; font-family: 'Croissant One', 'Bradley Hand', sans-serif; font-size: 2em; margin-top: 10px; }
 h4{color: #d9c2a3;}
-.book{color: #d9c2a3; }
+.book{color: #d9c2a3; font-size: 18px; padding: 15px 30px; margin-top: 50px; border-radius: 5px; }
 .book:hover{color: #d9c2a3; }
 .join:hover{color: #d9c2a3; }
-.msg h2{color: #d9c2a3;}
-.msg p{color: #d9c2a3; }
-footer{color: #d9c2a3; }
+.msg h2{color: #d9c2a3; font-family: "Croissant One";}
+.msg p{color: #d9c2a3; font-size: .8em; padding-bottom: 15px; }
+
 footer a{color: #d9c2a3; text-decoration: none; }
 footer a:hover{color: #d9c2a3; }
 footer p {
     font-size: 1.2em;
 }   
 footer p a:hover {
-    text-decoration: underline;
-}    
-      
-
-.icon {width: 80px;}
+    text-decoration: underline;}
+.icon {width: 80px; padding-top: 10px;}
 .logo{width: 80px; }
 #hero-img{width: 100%; }
+h2{ margin: 0; }
+#logo_link{ padding-top: 5px;}
+footer .social img{ padding-top: 15px; }
+.rivers-card, .camping-card, .rapids-card{ margin: 200px 0;}
+.card-img{ border: 10px solid #d9c2a3; }
+main section img {
+    box-sizing: border-box;
+}
+.mountains{ padding-top: 100px; padding-bottom: 1px; }
