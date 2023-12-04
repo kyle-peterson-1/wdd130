@@ -152,10 +152,20 @@ footer.social img{padding-top: 15px}
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
+
 .pg2-rivers-card{
     grid-column: 2/4;
     grid-row: 2/3;
 }
+.pg2_camping-card {
+    grid-column: 4/6;
+    grid-row: 2/3;
+}
+.pg2_rapids-card{
+    grid-column: 7/9;
+    grid-row: 2/3;
+}
+
 .pg2-card-img{
     border: 2px solid #d9c2a3;
     transition: transform .5s;
@@ -242,11 +252,75 @@ form {
     margin-top: 3em;
 }
 
+.div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.div img {
+    width: 400px;
+    height: 300px;
+    border: 2px solid #ff3d0036;
+    border-radius: 13px;
+    box-shadow: 4px 7px 7px 0px #00000042;
+    cursor: pointer;
+    margin: 10px;
+    transition: 400ms;
+}
+.div img:hover {
+    filter: grayscale(1);
+    transform: scale(1.03);
+}
+
+.body_msg {
+    text-align: center;
+    font-family: 'Sriracha', 'PT Serif', sans-serif;
+    color: rgba(20,30,13, .7);
+}
+#pg2-hero-img{
+    width: 100%;
+}
+ul{
+    background-color: rgba(20,30,13, .7);
+    padding: 2%;
+    border: 10px;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+
+ul li {
+    color: #d9c2a3;
+    font-family: 'Sriracha', 'PT Serif', sans-serif;
+    text-decoration: underline;
+}
+.pg2_h2 {
+    margin-top: 5%;
+    padding: 0%;
+    color: rgba(20,30,13, .7);
+    
+}
+ul li:hover {
+   color: #000;
+}
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
         height: auto;
-    }
+    }z
     nav, footer {
         flex-direction: column;
     }
