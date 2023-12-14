@@ -1,19 +1,473 @@
-/* if you are using any Google fonts change the font names below to your fonts. 
-Any spaces in your font name should be replaced with a +. 
-Fonts are separated by a | */
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
 
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+style.css {
+    --primary-color: #E63946;
+    --secondary-color: #F1FAEE;
+    --accent1-color: #A8DADC;
+    --accent2-color: #457B9D;
+    --accent3-color: #1D3557;
+}
+
+
+
+
+
+
+/* .content {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+header{
+    border: 2px solid red;
+    background-color: rgb(255, 0, 0, .5);
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display:grid;
+
+}
 
 .logo{
-    width: 25%;
-    height: 25%;
+    display:grid;
+    scale: 20%;
+    justify-self: left;
 }
 
-.img_event {
-    width: 25%;
-    height: 25%;
+.camer-icon{
+    scale: 400%;
+    justify-self: left;
+    align-self: left;
 }
-.card-img{
-    width: 25%;
-    height: 25%;
+
+.header-nav{
+    display: flex;
+    grid-area: 1/2/3/4;
+    
 }
+
+  nav a{
+    color:black; 
+    padding: 35px; 
+}
+  
+#scrolling-bar {
+    margin: 0 auto;
+    height: 100%; 
+    white-space: nowrap;
+    overflow-y: 100%;
+    border: 2px solid red;
+    background-color: rgb(255, 0, 0, .5);
+    column-span: all;
+    color: black;
+  } 
+#hero-img{
+    scale: 50%;
+} */
+
+
+:root {
+    --primary-color: #E63946;
+    --secondary-color: #F1FAEE;
+    --accent1-color: #A8DADC;
+    --accent2-color: #457B9D;
+    --accent3-color: #1D3557;
+  }
+  
+  /* Reset some default styles for better consistency across browsers */
+  body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Arial", sans-serif;
+    background-color: var(--secondary-color);
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: var(--accent3-color);
+    color: var(--secondary-color);
+    padding: 20px 40px; /* Increased padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 60px;
+    height: auto;
+  }
+  
+  .camera-icon {
+    width: 35px;
+    height: auto;
+  }
+  
+  .header-nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .header-nav a {
+    color: var(--secondary-color);
+    font-size: 16px; /* Increased font size */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .header-nav a:hover {
+    color: var(--accent2-color);
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  /* Hero section styles */
+  #hero {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    margin-bottom: 40px; /* Increased margin */
+    overflow: hidden;
+  }
+  
+  #hero-msg {
+    position: absolute; /* Positioned absolute */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  /* Main grid styles */
+  .Home-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  .home-title {
+    color: #000; /* Black color */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  #scrolling-bar {
+    text-align: center;
+  }
+  
+  #scrolling-bar marquee {
+    color: #000; /* Black color */
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;
+  }
+  
+  section {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  section:hover {
+    transform: translateY(-5px);
+  }
+  
+  h2 {
+    color: var(--accent3-color);
+    margin-bottom: 10px;
+  }
+  .layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* 3/4 and 1/4 column layout */
+    gap: 20px;
+  }
+  
+  .events {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .events:hover {
+    transform: translateY(-5px);
+  }
+  
+  h2 {
+    color: var(--accent3-color);
+    margin-bottom: 10px;
+  }
+  
+  .card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Small screens - stack sections */
+  @media (max-width: 600px) {
+    .Home-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Events section styles */
+  .events {
+    grid-column: span 2;
+  }
+  
+  .pg1_event_list li {
+    background-color: var(--accent1-color);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .pg1_event_list li:hover {
+    background-color: var(--accent2-color);
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: var(--accent3-color);
+    color: var(--secondary-color);
+    padding: 40px 0; /* Increased padding */
+    text-align: center;
+  }
+  
+  .footer-links a {
+    color: var(--secondary-color);
+    font-size: 16px; /* Increased font size */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 20px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer-links a:hover {
+    color: var(--accent2-color);
+  }
+  
+  /* Social icons styles */
+  .social img {
+    width: 40px;
+    height: auto;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .social img:hover {
+    transform: scale(1.2);
+  }
+  main {
+    padding: 20px; /* Adjust padding based on your design */
+  }
+  
+  main section {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+  }
+  
+  main section:hover {
+    transform: translateY(-5px);
+  }
+  
+  main h2 {
+    color: var(--accent3-color);
+    margin-bottom: 10px;
+  }
+  
+  main .card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    scale: 50%;
+  }
+  
+  .layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* 3/4 and 1/4 column layout */
+    gap: 20px;
+  }
+  
+  .layout .events {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .layout .events:hover {
+    transform: translateY(-5px);
+  }
+  
+  main .pg1_event_list li {
+    background-color: var(--accent1-color);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  main .pg1_event_list li:hover {
+    background-color: var(--accent2-color);
+  }
+  
+  main {
+    padding: 20px; /* Adjust padding based on your design */
+  }
+  
+  /* Card sections styles */
+  main section {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px; /* Add margin between sections */
+  }
+  
+  main section:hover {
+    transform: translateY(-5px);
+  }
+  
+  main h2 {
+    color: var(--accent3-color);
+    margin-bottom: 10px;
+  }
+  
+  main .card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Layout styles */
+  .main-layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* 3/4 and 1/4 column layout */
+    gap: 20px;
+  }
+  
+  .main-layout .events {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .main-layout .events:hover {
+    transform: translateY(-5px);
+  }
+  
+  main .pg1_event_list li {
+    background-color: var(--accent1-color);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  main .pg1_event_list li:hover {
+    background-color: var(--accent2-color);
+  }
+  /* Body styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  /* Header styles */
+  header {
+    font-family: 'Montserrat', sans-serif;
+    /* Add other header styles as needed */
+  }
+  
+  /* Main styles */
+  main {
+    padding: 20px; /* Adjust padding based on your design */
+  }
+  
+  /* Card sections styles */
+  main section {
+    font-family: 'Open Sans', sans-serif; /* Apply the body font to sections */
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+  }
+  
+  main section:hover {
+    transform: translateY(-5px);
+  }
+  
+  main h2 {
+    color: var(--accent3-color);
+    margin-bottom: 10px;
+  }
+  
+  main .card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Layout styles */
+  .layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* 3/4 and 1/4 column layout */
+    gap: 20px;
+  }
+  
+  .layout .events {
+    font-family: 'Open Sans', sans-serif; /* Apply the body font to events */
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .layout .events:hover {
+    transform: translateY(-5px);
+  }
+  
+  main .pg1_event_list li {
+    background-color: var(--accent1-color);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  main .pg1_event_list li:hover {
+    background-color: var(--accent2-color);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
